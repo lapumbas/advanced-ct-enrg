@@ -1,0 +1,44 @@
+.first-screen {
+  position: relative;
+}
+
+.first-screen__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.first-screen__title {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  padding-top: 29px;
+  text-align: center;
+}
+
+.first-screen__slogan {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #ffffff;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 19px;
+  text-align: center;
+}
+
+.first-screen__product {
+  margin-top: 29px;
+}
+
+.first-screen__button {
+  margin-top: 3px;
+}

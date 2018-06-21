@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Arial MT';
+  src: url("../fonts/ArialMT.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("../fonts/oswaldregular.woff2");
+  font-weight: 400;
+}
+
+
+body {
+  font-family: 'Arial MT', 'Arial', sans-serif;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+* before,
+* after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@import 'modules/header';
+@import 'modules/logo';
+@import 'modules/first-screen';
+@import 'modules/main';
+@import 'modules/button';
+@import 'modules/categories';
+@import 'modules/advantages';
+@import 'modules/example';
+

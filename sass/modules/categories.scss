@@ -1,0 +1,68 @@
+.categories {}
+
+.categories__item {
+  background: #f2f2f2;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.categories__icon--slim {
+  width: 50px;
+  height: 53px;
+  background: url("../../img/min/vector/green-ring.svg") no-repeat center;
+  background-size: contain;
+}
+
+.categories__icon--pro {
+  width: 67px;
+  height: 50px;
+  background: url("../../img/min/vector/green-ring.svg") no-repeat center;
+  background-size: contain;
+}
+
+.categories__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.categories__title {
+  margin: 0;
+  padding: 0;
+  color: #111111;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.categories__text {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.164)
+}
+
+.categories__link {
+  display: inline-block;
+  vertical-align: text-top;
+  margin: 0;
+  padding: 0;
+  color: #111111;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    background: url("../../img/vector/arrow-right.svg") no-repeat center;
+    background-size: cover;
+    right: -35px;
+    top: 2px;
+  }
+}

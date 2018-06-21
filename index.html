@@ -3,53 +3,70 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Cat Energy Home</title>
+
 </head>
 
 <body>
 
-  <header class="page-header">
-    <a class="logo-mobile page-header__logo-mobile" href="">
-      <img src="img/min/vector/logo-mobile.svg" width="33" height="38" alt="logo">
-    </a>
-    <a class="logo-text page-header__logo-text" href="">
-      <img src="img/min/vector/sprite/logo-mobile-header.svg" width="101" height="18" alt="logo">
-    </a>
-    <nav class="page-header__navigation">
+  <header class="header">
+    <div class="header__wrapper container">
+
+      <a class="logo__mobile header__logo" href="">
+        <img src="img/min/vector/logo-mobile.svg" width="33" height="38" alt="logo">
+      </a>
+      <a class="logo__text header__logo" href="">
+        <img src="img/min/vector/sprite/logo-mobile-header.svg" width="101" height="18" alt="logo">
+      </a>
+      <button class="header__burger header__burger--opened no-js" type="button">
+        <img src="img/min/vector/mobile-menu.svg" width="24" height="18" alt="menu">
+      </button>
+    </div>
+
+    <nav class="no-js header__navigation">
       <h2 class="visually-hidden">Основная навигация</h2>
-      <a class="page-header__link page-header__link--active" href="">Главная</a>
-      <a class="page-header__link" href="">Каталог продукции</a>
-      <a class="page-header__link" href="">Подбор программы</a>
+      <a class="header__link header__link--active" href="">Главная</a>
+      <a class="header__link" href="">Каталог продукции</a>
+      <a class="header__link" href="">Подбор программы</a>
     </nav>
-    <button class="page-header__burger" type="button">
-      <img src="img/min/vector/mobile-menu.svg" width="24" height="18" alt="menu">
-    </button>
 
   </header>
 
   <main class="main">
+
     <section class="first-screen main__first-screen">
-      <h1 class="first-screen__title">Функциональное питание для котов</h1>
-      <b class="first-screen__slogan">Занялся собой? Займись котом!</b>
-      <img class="first-screen__background" src="http://placehold.it/320x305" width="320" height="305" alt="фон">
-      <img class="first-screen__product" src="http://placehold.it/280x270" width="280" height="270" alt="продукт">
-      <a class="button first-screen__button" href="">Подобрать программу</a>
+      <img class="first-screen__background" src="img/min/raster/index-background-mobile@1x.jpg" width="320" height="305" alt="фон">
+      <div class="container">
+        <h1 class="first-screen__title">Функциональное питание для котов</h1>
+        <p class="first-screen__slogan">Занялся собой? Займись котом!</p>
+        <img class="first-screen__product" src="img/raster/index-can-mobile@1x.png" width="280" height="270" alt="продукт">
+        <a class="button first-screen__button" href="">Подобрать программу</a>
+      </div>
     </section>
 
-    <section class="categories main__categories">
+    <section class="categories main__categories container">
       <h2 class="visually-hidden">Категории</h2>
 
       <article class="categories__item">
-        <h3 class="categories__title">
-          <img class="categories__icon" src="http://placehold.it/67x50" alt="">Похудение</h3>
+        <div class="categories__wrapper">
+          <img class="categories__icon--slim" src="img/min/vector/icon-cat-slim.svg" alt="">
+          <h3 class="categories__title">Похудение</h3>
+        </div>
         <p class="categories__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет
           вашему питомцу сбросить лишний вес.</p>
         <a class="categories__link" href="">Каталог Slim</a>
       </article>
 
       <article class="categories__item">
-        <h3 class="categories__title">
-          <img class="categories__icon" src="http://placehold.it/67x50" alt="">Набор массы</h3>
+        <div class="categories__wrapper">
+          <img class="categories__icon--pro" src="img/min/vector/icon-cat-pro.svg" alt="">
+          <h3 class="categories__title">Набор массы</h3>
+        </div>
         <p class="categories__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
           мышцы!
         </p>
@@ -58,55 +75,54 @@
 
     </section>
 
-    <section class="advantages main__advantages">
+    <section class="advantages main__advantages container">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <img class="advantages__icon" src="http://placehold.it/60x60" width="60" height="60" alt="advantages icon">
-          <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          <p class="advantages__text advantages__text--1">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="advantages__item">
-          <img class="advantages__icon" src="http://placehold.it/60x60" width="60" height="60" alt="advantages icon">
-          <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <p class="advantages__text advantages__text--2">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="advantages__item">
-          <img class="advantages__icon" src="http://placehold.it/60x60" width="60" height="60" alt="advantages icon">
-          <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <p class="advantages__text advantages__text--3">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="advantages__item">
-          <img class="advantages__icon" src="http://placehold.it/60x60" width="60" height="60" alt="advantages icon">
-          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="advantages__text advantages__text--4">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
 
     <section class="example main__example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
-        тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <div class="example__digits">
-        <p class="example__digits-text">5 кг</p>
-        <legend class="example__digits-legend">снижение веса</legend>
-      </div>
-      <div class="example__digits">
-        <p class="example__digits-text">60 дней</p>
-        <legend class="example__digits-legend">затрачено времени</legend>
-      </div>
-      <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+      <div class="container">
 
-      <div class="example__slider">
-        <img class="example__photo" src="http://placehold.it/311x232" width="311" height="232" alt="похудение кота">
-        <div class="example__scale">
-          <button class="example__button example__button--back">Было</button>
-          <div class="example__range">
-
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
+          тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="example__digits">
+            <p class="example__digits-text">5 кг</p>
+            <legend class="example__digits-legend">снижение веса</legend>
           </div>
-          <button class="example__button example__button--fwd">Стало</button>
-        </div>
-      </div>
-    </section>
+          <div class="example__digits">
+            <p class="example__digits-text">60 дней</p>
+            <legend class="example__digits-legend">затрачено времени</legend>
+          </div>
+          <p class="example__cost">Затраты на питание: 15 000 руб.</p>
 
-  </main>
+          <div class="example__slider">
+            <img class="example__photo" src="http://placehold.it/311x232" width="311" height="232" alt="похудение кота">
+            <div class="example__scale">
+              <button class="example__button example__button--back">Было</button>
+              <div class="example__range">
+
+              </div>
+              <button class="example__button example__button--fwd">Стало</button>
+            </div>
+          </div>
+        </div>
+        </section>
+
+      </main>
 
   <footer class="main-footer">
     <h2 class="visually-hidden">Footer</h2>
@@ -154,7 +170,8 @@
     </section>
 
   </footer>
-
+  <script src="js/burger.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
