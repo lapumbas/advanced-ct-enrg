@@ -1,0 +1,319 @@
+.form {
+  input[type=text],
+  input[type=email],
+  input[type=number],
+  input[type=tel],
+  textarea {
+    color: #444444;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 1px solid #cdcdcd50;
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  input[type=radio],
+  input[type=checkbox] {
+    display: none;
+  }
+  input[type=radio]+label {
+    display: flex;
+    padding: 0;
+    padding-left: 46px;
+    position: relative;
+    margin: 24px 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+      border-radius: 40px;
+      left: 0;
+      top: -7px;
+    }
+  }
+  input[type=radio]:checked+label {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #68b738;
+      border-radius: 15px;
+      left: 10px;
+      top: 3px;
+    }
+  }
+  input[type=checkbox]+label {
+    display: flex;
+    padding: 0;
+    padding-left: 46px;
+    position: relative;
+    margin: 24px 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+      left: 0;
+      top: -7px;
+    }
+  }
+  input[type=checkbox]:checked+label {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 16px;
+      background: url(../../img/min/vector/icon-tick.svg) no-repeat center;
+      left: 6px;
+      top: 0px;
+    }
+  }
+}
+
+.form__input-wrapper {
+  display: flex;
+  align-items: center;
+  input {
+    flex: 1;
+    margin-left: 16px;
+  }
+  label {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.form__title {
+  margin: 0;
+  padding: 0;
+  color: #111111;
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.form__explain {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: #111111;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #222222;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  &:first-of-type {
+    margin-top: 20px;
+  }
+}
+
+.form__legend {
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: inline-block;
+  vertical-align: top;
+  color: #111111;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none; // margin-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 250px;
+  margin-left: -250px;
+  padding-bottom: 5px;
+}
+
+.form__legend--contacts {
+  width: 460px;
+}
+
+.form__legend-wrapper {
+  width: 100%;
+  height: 3px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(104, 183, 56);
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 150px;
+  &:placeholder,
+    {
+    color: #444444;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.form__note {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form__input-wrapper {
+  margin: 0;
+  margin-top: 14px;
+}
+
+.form__submit {
+  margin-top: 30px;
+}
+
+@media (min-width: $tabletSize) {
+  .form__container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .form__title {
+    color: rgb(17, 17, 17);
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-top: 80px;
+  }
+  .form__explain {
+    color: rgb(17, 17, 17);
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 45px;
+  }
+  .form__input-wrapper {
+    margin-top: 20px;
+  }
+  label {
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .form__fieldset--target {
+    margin-top: 70px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    padding-left: 30px;
+  }
+  .form__legend {
+    color: rgb(17, 17, 17);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    width: auto;
+    padding-bottom: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+  }
+  .form__legend-wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .form__extra-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+  .form__extra-wrapper {
+    .form__checkbox-wrapper {
+      margin: 0;
+      label {
+        margin: 0;
+      }
+    }
+  }
+  .form__note-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .form__note {
+    margin: 0;
+    padding: 0;
+    margin-left: 60px;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .form__submit {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktopSize) {
+  .form__container {
+    padding: 0 40px;
+  }
+  .form__desktop-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    align-items: center;
+    justify-content: space-between;
+    .form__fieldset {
+      width: 570px;
+      min-height: 200px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .form__input-wrapper:first-of-type {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  .form__desktop-wrapper .form__fieldset {
+    padding-left: 26px;
+  }
+  .form__extra-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+  .form__submit {
+    width: 568px;
+  }
+  .form__note {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 80px;
+  }
+}

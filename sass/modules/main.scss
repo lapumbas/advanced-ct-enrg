@@ -1,6 +1,39 @@
 .main__advantages {
   margin-top: 20px;
 }
+
 .main__example {
   margin-top: 40px;
 }
+
+@media (min-width: $tabletSize) {
+  .main__header {
+    margin-top: 24px;
+  }
+  .main__first-screen {
+    margin-top: 60px;
+  }
+  .main__advantages {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: $desktopSize) {
+
+  .main__header {
+    margin-top: 55px;
+  }
+  .main__first-screen {
+    margin-top: 110px;
+  }
+  .main__categories {
+    margin-top: 80px;
+  }
+  .main__advantages {
+    margin-top: 80px;
+  }
+  .main__example {
+    margin-top: 0px;
+  }
+}
+

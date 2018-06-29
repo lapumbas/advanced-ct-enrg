@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+}
+
+.copyright__link {
+  text-decoration: none;
+  display: block;
+}
+
+.copyright__text {
+  color: #444444;
+  font-family: "Arial MT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}

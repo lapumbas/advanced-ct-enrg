@@ -1,15 +1,19 @@
+@import 'variables';
 @font-face {
-  font-family: 'Arial MT';
   src: url("../fonts/ArialMT.woff2");
+  font-family: 'Arial MT';
+  font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Oswald';
   src: url("../fonts/oswaldregular.woff2");
+  font-family: 'Oswald';
+  font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
-
 
 body {
   font-family: 'Arial MT', 'Arial', sans-serif;
@@ -23,15 +27,12 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -62,6 +63,22 @@ html {
   padding: 0 20px;
 }
 
+@media (min-width: $tabletSize) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktopSize) {
+  .container {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
 @import 'modules/header';
 @import 'modules/logo';
 @import 'modules/first-screen';
@@ -70,4 +87,12 @@ html {
 @import 'modules/categories';
 @import 'modules/advantages';
 @import 'modules/example';
-
+@import 'modules/main-footer';
+@import 'modules/contacts';
+@import 'modules/social';
+@import 'modules/copyright';
+@import 'modules/catalog-main';
+@import 'modules/catalog';
+@import 'modules/extra';
+@import 'modules/form-main';
+@import 'modules/form';

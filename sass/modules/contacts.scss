@@ -1,0 +1,117 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__br {
+  display: none;
+}
+
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 29px;
+  padding-bottom: 24px;
+  &--inner {
+    margin-top: 35px;
+    background: #f2f2f2;
+  }
+}
+
+.contacts__dillers {
+  color: #111111;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.contacts__address {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contacts__map {
+  display: flex;
+  min-height: 350px;
+  background: url("../../img/raster/map-mobile-1x.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  .contacts__map {
+    background: url("../../img/raster/map-mobile-2x@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: $tabletSize) {
+  .contacts__dillers {
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  .contacts__br {
+    display: inline-block;
+  }
+  .contacts__wrapper {
+    padding: 70px;
+    &--inner {
+      margin-top: 75px;
+    }
+  }
+  .contacts__address {
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+  }
+  .contacts__map {
+    display: flex;
+    min-height: 395px;
+    background: url("../../img/raster/map-tablet-1x.jpg") no-repeat center; // background-size: cover;
+    background-size: cover;
+  }
+  @media (min-resolution: 144dpi) {
+    .contacts__map {
+      background: url("../../img/raster/map-tablet-2x@2x.jpg") no-repeat center; // background-size: cover;
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: $desktopSize) {
+  .contacts__map {
+    display: flex;
+    min-height: 395px;
+    background: url("../../img/min/raster/bg-map-desktop@1x.jpg") no-repeat center; // background-size: cover;
+    background-size: cover;
+  }
+  @media (min-resolution: 144dpi) {
+    .contacts__map {
+      background: url("../../img/min/raster/bg-map-desktop@2x.jpg") no-repeat center; // background-size: cover;
+      background-size: cover;
+    }
+  }
+  .contacts__wrapper {
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    background: white;
+    width: 570px;
+  }
+  .contacts__address {
+    text-align: left;
+    margin-left: 80px;
+  }
+}

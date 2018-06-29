@@ -1,13 +1,30 @@
-.logo {
-
-}
+.logo {}
 
 .logo__mobile {
   display: flex;
   align-items: center;
+  width: 33px;
+  height: 38px;
 }
 
 .logo__text {
   display: flex;
   align-items: center;
+}
+
+@media (min-width: $tabletSize) {
+  .logo__text {
+    display: none;
+  }
+  .logo__mobile {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: $desktopSize) {
+  .logo__mobile {
+    width: 202px;
+    height: 59px;
+  }
 }

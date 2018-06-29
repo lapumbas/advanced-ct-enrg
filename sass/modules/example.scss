@@ -1,5 +1,6 @@
 .example {
   background: #f2f2f2;
+  padding-bottom: 40px;
 }
 
 .example__title {
@@ -11,4 +12,230 @@
   font-weight: 400;
   line-height: 60px;
   padding-top: 11px;
+}
+
+.example__digits {
+  width: 124px;
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.example__digits-text {
+  color: #111111;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__digits-legend {
+  position: absolute;
+  display: flex;
+  width: 87px;
+  text-align: center;
+  background: #f2f2f2;
+  top: 60px;
+  color: #444444;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example__cost {
+  margin: 0;
+  padding: 0;
+  color: #111111;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  text-align: center;
+  width: 100%;
+}
+
+.example__slider {
+  position: relative;
+}
+
+.example__scale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example__photo {
+  margin-top: 40px;
+}
+
+.example__photo--after {
+  overflow: hidden;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+.example__button {
+  cursor: pointer;
+  color: #111111;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__range {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  margin: 0 18px;
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+}
+
+.example__pin {
+  width: 35px;
+  min-height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+}
+
+@media (min-width: $tabletSize) {
+  .example {
+    background: linear-gradient(to top, #f2f2f2 462px, white 462px, white 100%);
+    padding-bottom: 40px;
+  }
+  .example__scale {
+    margin-top: 20px;
+  }
+  .example__title {
+    color: rgb(17, 17, 17);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+  .example__digits-legend {
+    background: white;
+  }
+  .example__text {
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 60px;
+  }
+  .example__cost {
+    width: 200px;
+    margin-left: auto;
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 0;
+  }
+  .example__wrapper {
+    margin-top: 50px;
+    align-items: center;
+  }
+  .example__digits {
+    margin-right: 42px;
+    width: 162px;
+    height: 72px;
+  }
+  .example__digits-text {
+    margin: 0;
+    color: rgb(17, 17, 17);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37.02px;
+    text-transform: uppercase;
+  }
+  .example__slider {
+    margin-top: 60px;
+    padding-bottom: 50px;
+  }
+  .example__button {
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .example__range {
+    width: 428px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgb(220, 220, 220);
+    border: none;
+  }
+  .example__pin {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgb(205, 205, 205);
+    background-color: rgb(255, 255, 255);
+    background-image: url("../../img/min/vector/green-dot.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .example__photo--after {
+    bottom: 100px;
+    left: 20px;
+  }
+}
+
+@media (min-width: $desktopSize) {
+  .example__desktop-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 75px;
+  }
+  .example__text-wrapper {
+    padding-top: 60px;
+    width: 450px;
+  }
+  .example__text {
+    margin-top: 140px;
+  }
+  .example__slider {
+    margin-top: 0;
+    padding: 0;
+  }
+  .example__cost {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    margin-top: 60px;
+    br {
+      display: none;
+    }
+  }
+  .example__photo--after {
+    bottom: 50px;
+  }
+  .example__digits-legend {
+    background: #f2f2f2;
+  }
 }
